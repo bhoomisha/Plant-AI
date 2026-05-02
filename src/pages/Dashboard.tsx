@@ -6,7 +6,7 @@ import {
 } from 'recharts';
 import { useAppSelector } from '../hooks/redux';
 import { PLANTS } from '../data/plants';
-import { DashboardStatSkeleton } from '../components/ui/Skeleton';
+
 
 const Dashboard: React.FC = () => {
   const { isDark } = useAppSelector(s => s.theme);

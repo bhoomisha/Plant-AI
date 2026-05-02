@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import React, { useState, useMemo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useQuery } from '@tanstack/react-query';
 import { useAppDispatch, useAppSelector } from '../hooks/redux';
@@ -53,7 +53,6 @@ const Plants: React.FC = () => {
 
   const hasFilters = searchQuery || filters.type || filters.difficulty || filters.sunlight;
   const bg = isDark ? 'bg-sage-950' : 'bg-sage-50';
-  const cardBg = isDark ? 'bg-sage-900/60 border-sage-700/40' : 'bg-white border-gray-200';
   const inputStyle = isDark ? 'input-field w-full' : 'input-field-light w-full';
 
   const filterSelect = (key: string, value: string, placeholder: string, options: string[]) => (

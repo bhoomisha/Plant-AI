@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAppSelector } from '../hooks/redux';
-import { PLANTS } from '../data/plants';
 
 const YOUTUBE_VIDEOS = [
   { id: 'dPygZovzj4o', title: 'Ultimate Houseplant Care Guide', plant: 'General', type: 'tropical', duration: '18:24' },
@@ -27,7 +26,6 @@ const VideoCard: React.FC<{
   const [hovered, setHovered] = useState(false);
   const cardBg = isDark ? 'bg-sage-900/60 border-sage-700/40' : 'bg-white border-gray-200';
   const textPrimary = isDark ? 'text-white' : 'text-sage-900';
-  const textSecondary = isDark ? 'text-sage-400' : 'text-gray-500';
 
   return (
     <motion.div
